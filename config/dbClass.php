@@ -1,32 +1,26 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: AWT-KRIPAL
- * Date: 3/16/2019
- * Time: 2:54 PM
- */
 
 class dbClass
 {
     private $host = "localhost";
+    private $db_name = "catalogue";
     private $username = "root";
     private $password = "";
-    private $database = "catalogue";
 
-    public $connection;
+    public $conn;
 
     // get the database connection
-    public function getConnection(){
-
-        $this->connection = null;
+    public function getConnection()
+    {
+        $this->conn = null;
 
         try{
-            $this->connection = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->database, $this->username, $this->password);
-            $this->connection->exec("set names utf8");
+            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn->exec("set names utf8");
         }catch(PDOException $exception){
-            echo "Error: " . $exception->getMessage();
+            echo "Connection error: " . $exception->getMessage();
         }
 
-        return $this->connection;
+        return $this->conn;
     }
 }
