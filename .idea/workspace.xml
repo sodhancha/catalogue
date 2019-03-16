@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b020962e-bdd5-44e2-b872-07f4c162a264" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/config/data/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/config/data/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/dbClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/dbClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/dbImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/dbImport.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modals/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,19 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/modals/product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/dbClass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="390">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
               </folding>
@@ -37,19 +26,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modals/product.php">
+        <entry file="file://$PROJECT_DIR$/config/data/database.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/data/database.sql">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/entities/product/read.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -65,10 +54,11 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/config/data/db.php" />
         <option value="$PROJECT_DIR$/config/db_import.php" />
-        <option value="$PROJECT_DIR$/modals/product.php" />
-        <option value="$PROJECT_DIR$/config/data/database.sql" />
         <option value="$PROJECT_DIR$/config/dbImport.php" />
         <option value="$PROJECT_DIR$/config/dbClass.php" />
+        <option value="$PROJECT_DIR$/config/data/database.sql" />
+        <option value="$PROJECT_DIR$/modals/product.php" />
+        <option value="$PROJECT_DIR$/entities/product/read.php" />
       </list>
     </option>
   </component>
@@ -96,13 +86,18 @@
             <path>
               <item name="catalogue" type="b2602c69:ProjectViewProjectNode" />
               <item name="catalogue" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="catalogue" type="b2602c69:ProjectViewProjectNode" />
               <item name="catalogue" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="catalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -141,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552726757996</updated>
-      <workItem from="1552726761496" duration="4659000" />
+      <workItem from="1552726761496" duration="6924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4659000" />
+    <option name="totallyTimeSpent" value="6924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -200,32 +195,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/dbImport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modals/product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/data/database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="180">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/dbClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modals/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/data/database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entities/product/read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

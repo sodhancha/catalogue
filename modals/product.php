@@ -8,10 +8,8 @@
 
 class product
 {
-    // Connection instance
-    private $connection;
-
-    // table name
+    // database connection and table name
+    private $conn;
     private $table_name = "products";
 
     // table columns
@@ -19,10 +17,12 @@ class product
     public $slug;
     public $name;
     public $price;
+    public $description;
     public $quantity;
 
-    public function __construct($connection){
-        $this->connection = $connection;
+    // constructor with $db as database connection
+    public function __construct($db){
+        $this->conn = $db;
     }
 
     //create
@@ -30,11 +30,11 @@ class product
 
     }
 
-    //show
-    public function show(){
-        $query = "SELECT * FROM" . $this->table_name;
+    //read
+    public function read(){
+        $query = "SELECT id, name, description, price, quantity FROM " . $this->table_name;
 
-        $product = $this->connection->prepare($query);
+        $product = $this->conn->prepare($query);
 
         $product->execute();
 

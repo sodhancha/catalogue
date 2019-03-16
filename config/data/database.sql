@@ -6,6 +6,7 @@ CREATE TABLE `products` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `slug` varchar(50) NOT NULL ,
   `name` varchar(50) NOT NULL ,
+  `description` text NOT NULL,
   `price` float NOT NULL ,
   `quantity` float,
   `created` datetime NOT NULL,
