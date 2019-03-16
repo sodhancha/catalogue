@@ -24,7 +24,6 @@ if ($num > 0)
 
         $product_item = [
             "id"          => $id,
-            "slug"        => $slug,
             "name"        => $name,
             "description" => html_entity_decode($description),
             "price"       => $price,
