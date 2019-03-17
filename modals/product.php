@@ -6,7 +6,7 @@
  * Time: 7:39 PM
  */
 
-class product
+class Product
 {
     // database connection and table name
     private $conn;
@@ -39,11 +39,11 @@ class product
         $prods = $this->conn->prepare($query);
 
         // sanitize
-        $this->name        = htmlspecialchars(strip_tags($this->name));
-        $this->price       = htmlspecialchars(strip_tags($this->price));
-        $this->description = htmlspecialchars(strip_tags($this->description));
-        $this->quantity    = htmlspecialchars(strip_tags($this->quantity));
-        $this->created     = htmlspecialchars(strip_tags($this->created));
+        $this->name        = $this->_filter_input($this->name));
+        $this->price       = $this->_filter_input($this->price));
+        $this->description = $this->_filter_input($this->description));
+        $this->quantity    = $this->_filter_input($this->quantity));
+        $this->created     = $this->_filter_input($this->created));
 
         // bind values
         $prods->bindParam(":name", $this->name);
@@ -128,5 +128,9 @@ class product
 
         return false;
 
+    }
+
+     private function _filter_input( $vals ){
+        return htmlspecialchars(strip_tags( $vals );
     }
 }

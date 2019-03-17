@@ -6,7 +6,7 @@
  * Time: 6:51 AM
  */
 
-class user
+class User
 {
     // database connection and table name
     private $conn;
