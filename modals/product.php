@@ -18,8 +18,6 @@ class product
     public $price;
     public $description;
     public $quantity;
-    public $created;
-    public $modified;
 
     // constructor with $db as database connection
     public function __construct($db)
@@ -30,10 +28,13 @@ class product
     //create
     public function create()
     {
-        $query = "INSERT INTO
-                " . $this->table_name . "
-            SET
-                name=:name, price=:price, description=:description, quantity=:quantity, created=:created";
+        $query = "INSERT INTO " . $this->table_name . " 
+                SET 
+                    name=:name, 
+                    price=:price, 
+                    description=:description, 
+                    quantity=:quantity, 
+                    created=:created";
 
         $prods = $this->conn->prepare($query);
 
@@ -48,7 +49,7 @@ class product
         $prods->bindParam(":name", $this->name);
         $prods->bindParam(":price", $this->price);
         $prods->bindParam(":description", $this->description);
-        $prods->bindParam(":$this->quantity", $this->quantity);
+        $prods->bindParam(":quantity", $this->quantity);
         $prods->bindParam(":created", $this->created);
 
         if ($prods->execute())

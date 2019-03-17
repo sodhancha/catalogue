@@ -26,7 +26,6 @@ $jwt      = isset($data->jwt) ? $data->jwt : "";
 if($jwt){
     // if decode succeed, show user details
     try {
-
         // decode jwt
         $decoded = JWT::decode($jwt, $key, array('HS256'));
 
