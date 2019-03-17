@@ -18,9 +18,8 @@ use \Firebase\JWT\JWT;
 $database = new dbClass();
 $db       = $database->getConnection();
 $product  = new Product($db);
-
-$data = json_decode(file_get_contents("php://input"));
-$jwt  = isset($data->jwt) ? $data->jwt : "";
+$data     = json_decode(file_get_contents("php://input"));
+$jwt      = isset($data->jwt) ? $data->jwt : "";
 
 if ($jwt)
 {
