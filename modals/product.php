@@ -18,6 +18,8 @@ class product
     public $price;
     public $description;
     public $quantity;
+    public $created;
+    public $modified;
 
     // constructor with $db as database connection
     public function __construct($db)
